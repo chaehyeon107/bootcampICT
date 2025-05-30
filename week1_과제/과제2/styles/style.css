@@ -1,0 +1,41 @@
+body {
+    height: 80%;
+    overflow: hidden;
+    background-color: black;
+}
+
+section {
+    margin-top: 60px;
+    padding: 0 40px;
+}
+
+
+.trending-now-text,
+.netflix-original-text {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+.movie-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.movie-grid img {
+    display: block;
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.2s ease-in-out;
+    flex-shrink: 0;
+}
+
+.movie-grid img:hover {
+    transform: scale(1.05);
+}
